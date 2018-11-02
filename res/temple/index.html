@@ -6,43 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>$title$</title>
-    <script src="https://highlightjs.org/static/highlight.site.pack.js"></script>
-    <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/solarized-dark.css">
+    <script src="../../res/libs/highlight/highlight.pack.js"></script>
+    <link href="../../res/libs/highlight/styles/solarized-dark.css" rel="stylesheet">
+    <link href="../../res/css/header.css" rel="stylesheet">
+    <link href="../../res/css/footer.css" rel="stylesheet">
     <script>
         hljs.initHighlightingOnLoad();
     </script>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        .head {
-            width: 100vw;
-            background-color: #000;
-        }
-
-        .head>a {
-            color: #eee;
-            text-decoration: none;
-            font-size: 1.6em;
-        }
-
-        .markdown {
-            max-width: 900px;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="head">
-        <a href="./">主页</a>
-        <a href="./tags.html">标签</a>
-        <a href='./arts.html'>文章</a>
+    <header class="head">
+        <div class="left">
+            <a href="./" class="head-home">主页</a>
+        </div>
+        <div class="right">
+            <a href="./tags.html">标签</a>
+            <a href='./arts.html'>文章</a>
+        </div>
+    </header>
+    <div class="main">
+        <div class="left">
+        </div>
+        <div class="markdown">
+            $markdown$
+        </div>
     </div>
-    <div class="markdown">
-$markdown$
-    </div>
+    <footer>
+        <div>
+            由<mark title="别点，我投降">西瓜酱</mark>无力地驱动
+        </div>
+    </footer>
 </body>
 
 </html>

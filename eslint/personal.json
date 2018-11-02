@@ -1,0 +1,7 @@
+{
+    "extends": "./style.json",
+    "rules": {
+        "no-empty-function": 0,
+        "no-loop-func": 0
+    }
+}

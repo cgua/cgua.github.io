@@ -1,0 +1,18 @@
+footer {
+  border-top: #999 1px solid;
+  font-size: .8em;
+  color: #aaa;
+  text-align: center;
+}
+
+footer:first-child {
+  margin-top: .5em;
+}
+
+footer mark {
+  background-color: unset;
+  text-decoration: underline;
+  color: inherit;
+  cursor: pointer;
+}
+

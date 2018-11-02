@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  width: 100%;
+  background-color: #000;
+  font-size: 1.2em;
+  overflow: hidden;
+}
+
+.head a {
+  color: #eee;
+  text-decoration: none;
+  display: inline-block;
+  height: 100%;
+  padding: .3em .5em;
+}
+
+.head a:hover {
+  background-color: #6699EE;
+}
+
+.head > .left {
+  float: left;
+}
+
+.head > .right {
+  float: right;
+}
+
+.markdown {
+  max-width: 900px;
+}

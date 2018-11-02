@@ -1,0 +1,9 @@
+{
+    "extends": "./eslint/dev.json"
+    , "rules": {
+
+    }
+    , "globals": {
+        "console" : true
+    }
+}
