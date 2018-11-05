@@ -11,5 +11,13 @@
         "coverage": false,
         ".gitginore": false
     },
-    "eslint.enable": true
+    "eslint.enable": true,
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/eslint/*.json"
+            ],
+            "url": "/.vscode/eslintrc.schema.json"
+        }
+    ]
 }

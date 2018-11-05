@@ -1,6 +1,89 @@
 {
-  "extends": "./base.json",
+  "extends": "./default.json",
   "rules": {
+    "capitalized-comments": 0,
+    "dot-location": [
+      2,
+      "property"
+    ],
+    "func-style": 0,
+    "max-statements": [
+      2,
+      60
+    ],
+    "multiline-comment-style": 0,
+    "no-constant-condition": [
+      2,
+      {
+        "checkLoops": false
+      }
+    ],
+    "no-continue": 0,
+    "no-magic-numbers": [
+      2,
+      {
+        "ignore": [
+          0,
+          1,
+          -1
+        ],
+        "ignoreArrayIndexes": true
+      }
+    ],
+    "no-plusplus": 0,
+    "no-undefined": 0,
+    "object-curly-spacing": [
+      2,
+      "always"
+    ],
+    "quote-props": [
+      2,
+      "consistent-as-needed"
+    ],
+    "quotes": [
+      2,
+      "single"
+    ],
+    "valid-jsdoc": [
+      2,
+      {
+        "prefer": {
+          "arg": "param",
+          "argument": "param",
+          "class": "constructor",
+          "return": "returns",
+          "virtual": "abstract"
+        }
+      }
+    ],
+    "generator-star-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "require-unicode-regexp": 0,
+    "require-await": 0,
+    "id-length": [
+      "error",
+      {
+        "exceptions": [
+          "_",
+          "a",
+          "c",
+          "i",
+          "j",
+          "k",
+          "p",
+          "v",
+          "x",
+          "y",
+          "z"
+        ]
+      }
+    ],
+    "array-element-newline": 0,
     "no-whitespace-before-property": 2,
     "no-trailing-spaces": 0,
     "comma-spacing": 0,
@@ -16,6 +99,39 @@
     "space-in-parens": 2,
     "space-infix-ops": 2,
     "space-unary-ops": 2,
-    "spaced-comment": 2
+    "spaced-comment": 2,
+    "padded-blocks": [
+      2,
+      "never"
+    ],
+    "max-len": [
+      1,
+      180
+    ],
+    "no-multiple-empty-lines": [
+      1,
+      {
+        "max": 2
+      }
+    ],
+    "comma-style": [
+      1,
+      "first",
+      {
+        "exceptions": {
+          "ArrayExpression": false,
+          "ArrayPattern": false,
+          "ArrowFunctionExpression": false,
+          "CallExpression": false,
+          "FunctionDeclaration": false,
+          "FunctionExpression": false,
+          "ImportDeclaration": false,
+          "ObjectExpression": false,
+          "ObjectPattern": false,
+          "VariableDeclaration": false,
+          "NewExpression": false
+        }
+      }
+    ]
   }
 }
