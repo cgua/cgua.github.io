@@ -66,20 +66,11 @@
     "require-unicode-regexp": 0,
     "require-await": 0,
     "id-length": [
-      "error",
+      0,
       {
         "exceptions": [
           "_",
-          "a",
-          "c",
-          "i",
-          "j",
-          "k",
-          "p",
-          "v",
-          "x",
-          "y",
-          "z"
+          "a"
         ]
       }
     ],
@@ -131,6 +122,12 @@
           "VariableDeclaration": false,
           "NewExpression": false
         }
+      }
+    ],
+    "line-comment-position": [
+      "error",
+      {
+        "position": "beside"
       }
     ]
   }

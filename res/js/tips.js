@@ -1,7 +1,10 @@
+/* eslint-disable no-undef */
+
 window.addEventListener('load', (ev) => {
     const arr = document.querySelectorAll('[data-tips]');
-    for (let ele of arr) {
-        ele.addEventListener('mouseover', function () {
+
+    for (const ele of arr) {
+        ele.addEventListener('mouseover', () => {
             console.log(ele.getAttribute('data-tips'));
         });
     }

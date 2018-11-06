@@ -10,8 +10,8 @@
       1,
       5
     ],
-    "eol-last": [
-      1
-    ]
+    "eol-last": 0,
+    "callback-return": 0,
+    "no-inline-comments": 0
   }
 }

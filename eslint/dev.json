@@ -14,7 +14,7 @@
     "no-unused-vars": 0,
     "no-warning-comments": 0,
     "valid-jsdoc": [
-      "0",
+      0,
       {
         "prefer": {
           "arg": "param",
