@@ -32,4 +32,5 @@ body {
 
 .markdown {
   max-width: 900px;
+  margin: auto;
 }

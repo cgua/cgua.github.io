@@ -44,18 +44,6 @@
       2,
       "single"
     ],
-    "valid-jsdoc": [
-      2,
-      {
-        "prefer": {
-          "arg": "param",
-          "argument": "param",
-          "class": "constructor",
-          "return": "returns",
-          "virtual": "abstract"
-        }
-      }
-    ],
     "generator-star-spacing": [
       "error",
       {
@@ -124,10 +112,13 @@
         }
       }
     ],
-    "line-comment-position": [
+    "line-comment-position": 0,
+    "function-paren-newline": 0,
+    "brace-style": [
       "error",
+      "stroustrup",
       {
-        "position": "beside"
+        "allowSingleLine": true
       }
     ]
   }

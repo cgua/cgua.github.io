@@ -11,10 +11,10 @@
   },
   "rules": {
     "no-console": 0,
-    "no-unused-vars": 0,
+    "no-unused-vars": 1,
     "no-warning-comments": 0,
     "valid-jsdoc": [
-      0,
+      1,
       {
         "prefer": {
           "arg": "param",
@@ -32,7 +32,7 @@
       }
     ],
     "require-jsdoc": [
-      0,
+      1,
       {
         "require": {
           "FunctionDeclaration": true,

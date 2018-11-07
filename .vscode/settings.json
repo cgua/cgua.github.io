@@ -1,7 +1,8 @@
 {
+    "files.eol":"\n",
     "files.exclude": {
-        "**/.git": false,
-        "**/.svn": false,
+        "**/.git": true,
+        "**/.svn": true,
         "**/.hg": false,
         "**/CVS": false,
         "**/.DS_Store": false,
