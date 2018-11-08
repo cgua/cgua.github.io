@@ -5,6 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome",
+            "url": "${workspaceFolder}\\index.html",
+            "webRoot": "${workspaceFolder}\\index.html",
+            "runtimeArgs": [
+                "--allow-file-access-from-files",
+                " --disable-web-security"
+            ]
+        },
+        {
             "type": "node",
             "request": "launch",
             "name": "启动程序",

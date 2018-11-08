@@ -1,0 +1,56 @@
+<!----------------------
+   author: cgua
+   date  : 2018-10-31
+   tags  : npm sinopia
+ ---------------------->
+
+<h1 id="sinopia">Sinopia</h1>
+<blockquote>
+<p>用于搭建 npm 仓库的小工具  </p>
+</blockquote>
+<p>参考文档：  </p>
+<ul>
+<li><a href="https://www.jianshu.com/p/20856933f202">会飞的猪</a></li>
+</ul>
+<h3 id="-">需求：</h3>
+<p>出于各种原因需要一个私有 npm 仓库</p>
+<h3 id="-">解决方案：</h3>
+<ol>
+<li><p>git+ssh: 直接引用到 GitHub 项目地址  </p>
+<p> 勉强及格，如果没有更好的办法的话倒也不失为一个好办法。</p>
+</li>
+<li><p>cnpm  </p>
+<p> 要数据库有点重，其它各方面堪称完美。</p>
+</li>
+<li><p>sinopia  </p>
+<p> 好处：  </p>
+<pre><code> - 配置简单，开箱即食。  
+ - 支持代理，当本地不存在要安装的包时,会自动去远程仓库拉取包。  
+ - 还有个看起来高大上的在线页面哟，疯狂点赞。逼格瞬间高了好几个档次。  </code></pre><p> 缺点：  </p>
+<pre><code> - 有坑。</code></pre></li>
+</ol>
+<hr>
+<h2 id="-">安装及试运行：</h2>
+<pre><code class="language-bash">$npm i -g sinopia
+$sinopia</code></pre>
+<p>之后打开 [<a href="http://localhost:4873%5D">http://localhost:4873]</a> 试试，出现包搜索页面则表示成功了。</p>
+<h2 id="-">配置:</h2>
+<h3 id="-">配置文件地址</h3>
+<ul>
+<li>windows: %userprofile%\AppData\Roaming\sinopia\</li>
+<li>linux 或是设置 HOME 的情况下: /home/.config/sinopia/  </li>
+</ul>
+<p>[注]安装完成之后,需要先运行一次 <code>sinopia</code> 才会生成配置文件。  </p>
+<p>默认配置：允许所有人做他们想做的任何事，但是只能本地访问。</p>
+<h3 id="-">目录结构</h3>
+<ul>
+<li>config.yaml — 配置访问权限，代理，文件存储路径等所有配置信息的  </li>
+<li>storage — 缓存npm包目录  </li>
+<li>htpasswd — 保存用户的账号密码等信息  </li>
+</ul>
+<blockquote>
+<p>storage ，htpasswd 是添加用户之后自动创建的</p>
+</blockquote>
+<h3 id="-">配置选项</h3>
+<h4 id="-">添加代理：</h4>
+<p><img src="img/sinopia-scope-proxy.png" alt="scope proxy"></p>

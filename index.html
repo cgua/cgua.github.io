@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-cn-hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>$title$</title>
+    <script src="./res/libs/highlight/highlight.pack.js"></script>
+    <script src="./res/js/index.js"></script>
+    <link href="./res/libs/highlight/styles/solarized-dark.css" rel="stylesheet">
+    <link href="./res/css/header.css" rel="stylesheet">
+    <link href="./res/css/footer.css" rel="stylesheet">
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+</head>
+
+<body>
+    <header class="head">
+        <div class="left">
+            <a href="./index.html" class="head-home">主页</a>
+        </div>
+        <div class="right">
+            <a href="./tags.html">标签</a>
+            <a href='./arts.html'>文章</a>
+        </div>
+    </header>
+    <div class="main">
+        <div class="left">
+            <div class="avatar">
+                <div style="width:200px;height:200px;background-color: #eee">假装我是个很帅的头像</div>
+            </div>
+            <div class="articles">
+                <div>文章列表</div>
+                <ul>
+                    <li>
+                        <a class="js-selectArticle" href="./index.html?type=art&page=readme">readme</a>
+                    </li>
+                    <li>
+                        <a class="js-selectArticle" href="./index.html?type=art&page=new-proto-__proto__等">new-proto-__proto__等</a>
+                    </li>
+                    <li>
+                        <a class="js-selectArticle" href="./index.html?type=art&page=js/sinopia">sinopia</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="js-markdown" class="markdown">
+            <h1>
+                项目开发中，详请请点击左边的 readme
+            </h1>
+        </div>
+    </div>
+    <footer>
+        <div>
+            由&nbsp;<mark title="别点，我投降">西瓜酱</mark>&nbsp;慢慢地驱动
+        </div>
+    </footer>
+</body>
+
+</html>

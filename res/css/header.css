@@ -30,7 +30,24 @@ body {
   float: right;
 }
 
-.markdown {
-  max-width: 900px;
+.main{
+  width: 90vw;
   margin: auto;
+  overflow: hidden;
+}
+
+.left , .markdown{
+  box-sizing: border-box;
+}
+
+.left{
+  width: 290px;
+  float: left;
+}
+
+.markdown {
+  width: calc(90vw - 310px);
+  border-left: 1px solid #ccc;
+  padding-left: 18px;
+  float: right;
 }

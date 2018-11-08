@@ -12,7 +12,7 @@
         "coverage": false,
         ".gitginore": false
     },
-    "eslint.enable": true,
+    "eslint.enable": false,
     "json.schemas": [
         {
             "fileMatch": [
