@@ -26,7 +26,7 @@ function Url(href) {
 
 window.addEventListener('load', () => {
     const url = new Url(window.location.href);
-    const cUrl = '_pub/' + url.searchParams.get('page') + '.txt';
+    const cUrl = url.searchParams.get('page') + '.txt';
 
     const ajax = new XMLHttpRequest();
     ajax.open('get', cUrl);
